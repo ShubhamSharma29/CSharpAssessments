@@ -74,7 +74,7 @@ namespace CodeDemoCore
         public void Query()
         {
             var provider = new PatientCsvProvider();
-            provider.FilePath = @"D:\Philips_Files\Projects\ProviderAssignment\CreatePatient.csv";
+            provider.FilePath = @"D:\Philips_Files\Projects\ProviderAssignment\Patient.csv";
             IEnumerable<PatientInfo> patients = provider.GetAllPatients();
             var result = patients.Where(p => p.Age > 30);
             foreach (var patient in result)
